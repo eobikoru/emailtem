@@ -24,6 +24,28 @@
         justify-content: center;
         padding-top: 19px;
       }
+
+      .link{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 12px;
+        justify-content: center;
+      }
+      .link a {
+        display: flex;
+        width: 69%;
+        flex-wrap: wrap;
+        height: 45px;
+     
+       word-wrap:break-word;
+       justify-content: center;
+       
+       
+      }
+     .link a .adjust{
+         width: 90%;
+         flex-wrap: wrap;
+     }
       .mainbody {
         height: 707px;
         width: 50%;
@@ -64,6 +86,7 @@
       .button {
         margin-top: 24px;
         margin-bottom: 21px;
+      
       }
       button {
         width: 213px;
@@ -73,6 +96,11 @@
         letter-spacing: 2px;
         border: none;
         border-radius: 12px;
+        cursor: pointer;
+      }
+      button a{
+        text-decoration: none;
+        color: white;
       }
       .address {
         display: flex;
@@ -98,13 +126,7 @@
         margin-top: 30px;
         box-shadow: 5px 5px 5px 5px #aaaaaa;
       }
-      .link {
-        display: flex;
-        justify-content: center;
-        margin-top: 23px;
-        line-height: 17px;
-        
-      }
+     
       .link a {
         font-size: 9px;
       }
@@ -180,10 +202,7 @@
         .copy p{
           font-size: 13px;
         }
-        .link a{
-          font-size: 8px;
-          line-height: 11px;
-        }
+      
         .please p{
           font-size: 12px;
         }
@@ -202,6 +221,7 @@
         .verifybody {
           width: 100%;
         }
+       
       }
       @media screen and (max-width: 408px) {
         .mainbody {
@@ -236,22 +256,16 @@
           </p>
         </div>
         <div class="button">
-          <button>Verify Email</button>
+          <button><a href="/google.com"> Verify Email</a></button>
         </div>
         <div class="copy">
           <p>or copy and paste this link into your browser</p>
         </div>
         <div class="link">
-          <a href="#">
-            <span style="margin-left: 94px">
-              https://api.blinqpay.io/api/v1/email/verify/39?</span
-            >
-            <br />
-            <span style="margin-left: 57px">
-              expires=1642510647&hash=6e5291b501601f6be9286a88ed4 6bf1f237
-            </span>
-            <br />24478&signature=703974d21be43319dc5dbf634dc73601a818ef931ab7e8a476043d5c43e9e1d1</a
-          >
+         <a href=""><span class="adjust">
+          https://api.blinqpay.io/api/v1/email/verify/39?expires=164251064hash=6e5291b501601f6be9286a88ed46bf1f2372signature=703974d21be43319dc5dbf634dc73601a818ef931ab7e8a476043d543e9e1d1
+        </span>
+        </a>
         </div>
         <div class="please">
           <p>
